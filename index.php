@@ -33,13 +33,13 @@
                 
                 $(dados).each(function(ind, elem){
                 var classValor = (elem.tipo == "C")? 'valor-credito' : 'valor-debito';
-    
+                
                 var tr = $('<tr>' +
                   '<td>'+elem.data+'</td>' +
                   '<td>'+elem.descricao+'</td>' +
                   '<td>'+elem.categoria+'</td>' +
                   '<td>'+elem.tipo+'</td>' +
-                  '<td class="classValor">'+elem.valor+'</td>' +
+                  '<td class="'+classValor+'">'+elem.valor+'</td>' +
                 '</tr>');
                     
                 $('#rel-30dias tbody').append(tr);
